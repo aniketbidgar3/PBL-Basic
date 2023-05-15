@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>inbox</title>
+</head>
+<body class="homepage_body">
+    <h1>Bookshelf.com</h1>
+
+    <nav>
+        <ul>
+            <div class="nav_left">
+                <li ><a href="homepage.html"><span><ion-icon name="home-outline"></ion-icon>	&nbsp;Homepage</span></a></li>
+                <li ><a href="setting.html"><span><ion-icon name="settings-outline"></ion-icon>	&nbsp;Setting</span></a></li>
+                <li class="active"><a href="#"> <span><ion-icon name="chatbox-outline"></ion-icon>	&nbsp;Inbox</span></a></li>
+                <!-- <li><a href="about_us.html"> <span>about&nbsp;us&nbsp;<ion-icon name="chevron-down-outline"></ion-icon></span></a></li> -->
+                <li><a href="contact.html"><span><ion-icon name="call-outline"></ion-icon>&nbsp;Contact&nbsp;Us</span></a></li>
+            </div>
+            <div class="nav_right">
+                <li class="searchBox">
+                    <div class="search"><ion-icon name="search-outline"></ion-icon></div>
+                    <div class="searchInput">
+                        &nbsp;<input type="search" placeholder="search books">
+                    </div>
+                    <!-- <div class="close"><ion-icon name="close-outline"></ion-icon></div> -->
+                </li>
+                <li><a href="index.html"><span><ion-icon name="log-out-outline"></ion-icon>&nbsp;&nbsp; Log Out</span></a></li>
+            </div>
+        </ul>   
+    </nav>
+    
+<!--     
+script for search 
+<script>
+    let search = document.querySelector('.search');
+    let close = document.querySelector('.close');
+    let searchBox = document.querySelector('.searchBox');
+    search.onclick = function(){
+        searchBox.classList.add('active');
+    }
+    close.onclick = function(){
+        searchBox.classList.remove('active');
+    }
+</script> -->
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

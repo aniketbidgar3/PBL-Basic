@@ -1,0 +1,865 @@
+/* ************************************CSS FOR ALL ELEMENTS************************************ */
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* 
+h1,h2{
+    text-align: center;
+    clear: both;
+} */
+
+
+/* ************************************css for navbar************************************ */
+
+.nav_left{
+    float: left;
+}
+
+.nav_right{
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+ nav li {
+    float: left;
+  }
+  
+ nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+ nav li a:hover {
+    background-color: #111;
+  }
+
+  .activate {
+  background-color: #2196f3;
+ 
+}
+
+.searchBox{
+    
+   height: 30px;
+   width: 200px;
+   padding: 10px;
+   display: flex;
+   flex-direction: row;
+   overflow: hidden;
+
+   
+}
+
+
+.search{
+    height: 30px;
+    min-width: 30px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+}  
+
+.searchInput{
+    display: flex;
+    background: white;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.searchInput input[type="search"]::-webkit-search-cancel-button{
+   float: right;
+    
+} 
+
+.searchInput input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;  
+}
+
+
+
+/* ************************************ css for index.html************************************ */
+
+
+
+
+@media (min-width:1024px){
+
+.left_index img{
+   height: 80vh;
+    
+    box-shadow: 10px 10px 10px black;
+}
+
+.left_index{
+    width: 48.5vw;
+    height: 90vh;
+    float: left;
+    padding-top: 10vh;
+ 
+    text-align: center;
+}
+
+.left_index .translate{
+    transform: translateX(5vw);
+}
+
+.right_index{
+    width: 48.5vw;
+    height: 90vh;
+    float: right;
+    padding-top: 10vh;
+    text-align: center;
+    
+}
+
+.right_index .translate{
+    transform: translateX(-5vw);
+}
+
+.right_index input {
+    width: 20rem;
+    height:2em;
+}
+
+.right_index button{
+    background-color: #2196f3;;
+    color: white;
+    width: 20.5rem;
+    height:3em;
+    margin : 1em 0 1.5em 0; 
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.right_index button:hover{
+   
+   opacity: 0.7;
+}
+
+ 
+
+.logos img{
+    width: 10%;
+    margin-right: 15px;
+    border-radius: 50%;
+    width: 2.7em;
+}
+ 
+.passwordBox{
+    border: 1px solid #777;
+    border-radius: 3px;
+    height: 32.66px;
+    width: 328px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+  
+    
+}
+
+.passwordInput input{
+    width: 280px;
+    border: none;
+    outline: none;  
+    margin: 2px;
+    float: left;
+}
+
+.eye{
+    float: right;
+    padding: 6px 6px ;
+}
+
+}
+
+@media (max-width:1024px){
+
+
+.left_index{
+    display: none;
+}
+
+
+.right_index{
+    
+    padding: 1vh;
+    text-align: center;
+    
+}
+
+
+.right_index input {
+    width: 20rem;
+    height:2em;
+}
+
+.right_index button{
+    background-color: #2196f3;;
+    color: white;
+    width: 20.5rem;
+    height:3em;
+    margin : 1em 0 1.5em 0; 
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.right_index button:hover{
+   
+   opacity: 0.7;
+}
+
+ 
+
+.logos img{
+    width: 10%;
+    margin-right: 15px;
+    border-radius: 50%;
+    width: 2.7em;
+}
+ 
+.passwordBox{
+    border: 1px solid #777;
+    border-radius: 3px;
+    height: 32.66px;
+    width: 328px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+  
+    
+}
+
+.passwordInput input{
+    width: 280px;
+    border: none;
+    outline: none;  
+    margin: 2px;
+    float: left;
+}
+
+.eye{
+    float: right;
+    padding: 6px 6px ;
+}
+
+}
+
+
+
+/* ************************************CSS For courosel************************************ */
+ 
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 10vh auto 0 auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+ /* ************************************css for form.html************************************ */
+
+ @media (min-width:1024px){
+.main_form{
+    text-align: center;
+    margin: 2vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.main_form h1{
+    text-align: center;
+    clear: both;
+}
+.left_form{
+    width: 50%;
+    float:left;
+
+}
+
+.right_form{
+    width: 50%;
+    float:right;
+    
+
+}
+
+.transform_input_left{
+    transform: translateX(5vw);
+    
+
+}
+
+.transform_input_right{
+    transform: translateX(-5vw);
+    
+
+}
+
+.right_form input, .left_form input {
+    width: 50%;
+    height:3em;
+    border-radius: 10px;
+}
+
+
+.form_button{
+    background-color:#2196f3;
+    color: white;
+    width: 20.5rem;
+    height:3em;
+    margin : 1em 0; 
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.form_button:hover{
+    opacity: 0.7;
+  
+}
+
+
+.sign_up_option button{
+    width: 25%;
+    height:3em;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid #2196f3;
+    margin: 2vh 3vw;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.sign_up_option img{
+     height: 30px;
+     float: left;
+     margin-top: 8px;
+     border-radius: 50%;
+    
+}
+ }
+
+
+
+
+
+ @media (max-width:1024px){
+
+    .main_form{
+        text-align: center;
+        margin: 1vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    
+    .main_form h1{
+        text-align: center;
+        clear: both;
+    }
+
+    .right_form input, .left_form input {
+        width: 50%;
+        height:3em;
+        border-radius: 10px;
+    }
+    
+    
+    .form_button{
+        background-color:#2196f3;
+        color: white;
+        width: 20.5rem;
+        height:3em;
+        margin : 1em 0; 
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    
+    .form_button:hover{
+        opacity: 0.7;
+      
+    }
+    
+    
+    .sign_up_option button{
+        width: 50%;
+        height:3em;
+        background-color: white;
+        border-radius: 10px;
+        color: black;
+        border: 1px solid #2196f3;
+        margin: 2vh 3vw;
+        cursor: pointer;
+        font-size: 1em;
+    }
+    
+    .sign_up_option img{
+         height: 30px;
+         float: left;
+         margin-top: 8px;
+         border-radius: 50%;
+        
+    }
+ }
+
+
+/* ************************************CSS For courosel************************************ */
+ 
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 10vh auto 0 auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/* ************************************css for homepage.html************************************ */
+
+
+.homepage_body{
+    margin: 1em 3em 3em 3em;
+  
+}
+
+
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 4em 0 0 0 ;
+    padding: 50px 0;
+    gap: 40px 60px;
+}
+
+.container .drop{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    /* background: #333; */
+    box-shadow: inset 20px 20px 20px rgba(0 ,0 ,0 ,0.05) , 25px 35px 20px rgba(0, 0 ,0 ,0.05) ,25px 30px 30px rgba(0 ,0 ,0, 0.05) ,inset -20px -20px 25px rgba(255, 255 ,255 ,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .drop:nth-child(1){
+    border-radius: 29% 71% 72% 28% / 51% 47% 53% 49%  ;
+   
+}
+
+
+.container .drop:nth-child(2){
+   
+    border-radius: 63% 37% 51% 49% / 36% 36% 64% 64% ;
+}
+
+
+.container .drop:nth-child(3){
+  border-radius: 59% 41% 42% 58% / 41% 42% 58% 59% ;
+}
+
+
+.container .drop:nth-child(4){
+    border-radius: 46% 54% 48% 52% / 70% 69% 31% 30% ;
+  }
+
+.container .drop:hover{
+    border-radius: 50%;
+}
+
+
+.container .drop .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+}
+
+.container .drop .content h2{
+    top: 1em;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #eff0f4;
+    border-radius: 50%;
+    box-shadow: inset 2px 5px 10px rgba(0 ,0 ,0 ,0.1),inset -2px -5px 10px rgba(255 ,255 ,255 ,1),
+    15px 10px 15px rgba(0 ,0 ,0 ,0.05), 15px 15px 10px rgba(0 ,0 ,0 ,0.025);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: var(--clr);
+
+}
+
+.container .drop .content a{
+    top: 2em;
+ 
+    position: relative;
+    padding: 10px 25px;
+    background: var(--clr);
+    text-decoration: none;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 500;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    opacity: 0.50;
+    transition: 0.5s;
+
+}
+
+.container .drop .content a:hover{
+    opacity: 1;
+}
+
+
+
+
+/* ************************************css for contact.html************************************ */
+.contact{
+    color: white;
+    height: 29rem;
+   width: 36rem;
+   
+    margin: 2rem;
+    background: #111;
+}
+
+
+.left_contact{
+    width: 48.5vw;
+    height: 90vh;
+    float: left;
+    padding-top: 10vh;
+ 
+    text-align: center;
+}
+
+.right_contact{
+    width: 48.5vw;
+    height: 90vh;
+    float: right;
+    padding-top: 10vh;
+    text-align: center;
+    
+}
+
+
+.contact_info{
+    margin-left:1rem ;
+    
+}
+
+.table_left{
+    float: left;
+    padding: 0 0 0 20px;
+    text-align: left;
+  
+}
+.table_left p{
+    margin: 0 0 1em 0;
+}
+th{
+    color: #2196f3;
+}
+.icons{
+    padding: 15px;
+    object-fit: cover;
+    color:#2196f3;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.logos h4{
+    margin: 1em 0;
+}
+
+/*  ************************************css for books.html ************************************ */
+
+.card_body{
+    margin-left: 0rem;
+}
+
+.card{
+    margin: 20px;
+    float: left;
+    position: relative;
+    width: calc((94/100)*310px) ;   /*310*/
+    height: calc((94/100)*400px);  /*400*/
+    background: #fff;
+    border-radius: 20px;
+     overflow: hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25)
+}
+
+.card .poster{
+    position: relative;
+    overflow: hidden;
+}
+
+.card .poster::before{
+    content: '';
+    position: absolute;
+    bottom: -180;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg , #044c7c , 50% , transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.card:hover .poster::before{
+    bottom: 0px;
+}
+ 
+
+.card .poster img{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.card:hover .poster img{
+    transform: translateY(-50px);
+    filter: blur(5px);
+
+}
+
+.card .details{
+    position: absolute;
+    bottom: calc((130/100)*-155px);
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.card:hover .details{
+    bottom: 0px;
+}
+
+.card .details h2,h3,h4{
+    text-align:unset;
+    margin: 5px 0;
+}
+
+.card .details .information p{
+    color: #fff;
+    padding: 0 10px;
+   
+}
+.intro{
+    padding-bottom: 1em;
+}
+.remaining{
+    padding: 12vw;
+}
+
+
+/* ************************************css for branch.html************************************ */
+
+.container .branch .content h2{
+    top: 1.5em;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background: #eff0f4;
+    border-radius: 30%;
+    box-shadow: inset 2px 5px 10px rgba(0 ,0 ,0 ,0.1),inset -2px -5px 10px rgba(255 ,255 ,255 ,1),
+    15px 10px 15px rgba(0 ,0 ,0 ,0.05), 15px 15px 10px rgba(0 ,0 ,0 ,0.025);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: var(--clr);
+
+}
